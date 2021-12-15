@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function ToyForm({ onAddToy }) {
+  const [errors, setErrors] = useState ([])
   const [formData, setFormData] = useState({
     name: "",
     image: "",
